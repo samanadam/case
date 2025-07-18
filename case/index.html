@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Enter Londonist</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://kit.fontawesome.com/a2e0e6cf0b.js" crossorigin="anonymous"></script>
+  <script src="Functions/Enter.js" defer></script>
+  <script src="Functions/Slider.js" defer></script> 
+</head>
+<body>
+
+  <section class="hero-section text-white d-flex align-items-center" id="hero">
+    <div class="container py-5">
+     
+      <div class="row justify-content-center">
+        <div class="col-lg-8">          
+          <form class="p-4 bg-purple rounded-4 " id="myForm">
+            <p class="text-center custom-gold mt-3 small">
+              Access Granted!
+            </p>
+            <p class="text-center custom-gold mt-3 small">
+              Just one more step - complete the form!
+            </p>
+            <div class="row g-2">
+              <div class="col-md-6">
+                <input type="text" class="form-control" placeholder="Name Surname*" id="Name-id" />
+              </div>
+              <div class="col-md-6">
+                <input type="tel" class="form-control" placeholder="+90" id="Phone-id" />
+              </div>
+              <div class="col-md-6">
+                <input type="email" class="form-control" placeholder="Email*" id="Email-id" />
+              </div>
+              <div class="col-md-6">
+                <input type="text" class="form-control" placeholder="Language*" id="Language-id" />
+              </div>
+              <div class="col-md-6">
+                <select class="form-select" id="Duration-id">
+                  <option selected  style="color: #65008b">Duration (Weekly)*</option>
+                  <option value="4">4</option>
+                  <option value="12">12</option>
+                  <option value="24">24</option>
+                </select>
+              </div>
+              <div class="col-md-6">
+                <input type="text" class="form-control" placeholder="Academic Year*" id="Academic-id" />
+              </div>
+              <div class="col-12">
+                <textarea rows="2" class="form-control" placeholder="Message*" id="Message-id"></textarea>
+              </div>
+            </div>
+            <p class="text-center mt-3 small">
+              For stays starting from 1st September 2025, book a minimum of 20 weeks with full payment. Prices may vary depending on the duration of your booking. T&Cs apply.
+            </p>
+            <button type="submit" class="btn btn-warning w-100 fw-bold" id="Enter-btn">ENTER LONDONIST</button>
+          </form>
+
+          <div id="alertDiv" class="mt-3"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="residence-section text-white" id="residences">
+    <div class="bg-dark bg-opacity-75 min align-items-center" >
+    <div class="container py-5">
+      <h2 class="text-center text-warning mb-4">LONDONIST RESIDENCES</h2>
+          
+        <div class="row bg-white  g-0 flex-column flex-md-row mb-4 gold-border">
+          <div class="col-md-3 position-relative">
+            <span class="badge bg-pink w-100 d-block text-center py-2 rad">NEW RESIDENCE</span>
+            
+            <div id="paddingtonCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
+              <div class="carousel-indicators custom-carousel-indicators">
+                <button type="button" data-bs-target="#paddingtonCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#paddingtonCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#paddingtonCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="media/room/mobile_rooms_photo/Paddıngton 1.png" class="img-fluid rounded-start w-100 d-block" alt="Paddington Room 1" />
+                </div>
+                <div class="carousel-item">
+                  <img src="media/room/mobile_rooms_photo/Paddıngton 2.png" class="img-fluid rounded-start w-100 d-block" alt="Paddington Room 2" />
+                </div>
+                <div class="carousel-item">
+                  <img src="media/room/mobile_rooms_photo/Paddıngton 3.png" class="img-fluid rounded-start w-100 d-block" alt="Paddington Room 3" />
+                </div>
+                </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 p-4 d-flex flex-column justify-content-between position-relative">
+            <div>
+              <h3 class="text-pink fw-bold">PADDINGTON CITI VIEW</h3>
+              <hr class="my-2 w-100">
+              <p class="black"><img src="media/icon/location.svg" alt="location icon" class="icon me-2" width="20" height="20">15 - 25 Talbot Square, London, W2 1TT</p>
+
+                <hr class="my-2 w-100">
+                <div class="d-flex flex-wrap mb-3">
+           
+                <span class="me-4 d-flex align-items-center black"><img src="media/icon/washing.svg" alt="washing icon" class="icon me-2" width="20" height="20">Laundry</span>
+                <span class="me-4 d-flex align-items-center black"><img src="media/icon/wifi.svg" alt="wifi icon" class="icon me-2" width="20" height="20">Wifi</span>
+                <span class="d-flex align-items-center black"><img src="media/icon/dumbel.svg" alt="dumbel icon" class="icon me-2" width="20" height="20">Gym</span>
+
+              </div>
+              <hr class="my-2 w-100">
+              <p class="d-flex align-items-center black"><img src="media/icon/location.svg" alt="location icon" class="icon me-2" width="20" height="20">Oxford Street - 20 min via tube <span class="ms-4">16 min via tube</span></p>
+            </div> 
+            
+              
+            <div class="position-absolute top-0 end-0 mt-3 pe-3 d-none d-md-block">
+              <button class="btn btn-lg fw-bold fs-5 px-4 py-2 shadow-sm rounded-pill custom-bg-rainbow">
+                <span class="text-white">£560 /week</span>
+              </button>
+            </div>
+            
+            <div class="mt-3 d-block d-md-none">
+              <button class="btn btn-lg fw-bold fs-5 px-4 py-2 shadow-sm w-100 rounded-pill custom-bg-rainbow">
+                <span class="text-white">£560/week</span>
+              </button>
+            </div>
+        </div>
+        </div>
+        <div class="row bg-white  p-2  g-0 flex-column flex-md-row mb-4 gold-border">
+          <div class="col-md-3 position-relative">
+            <div id="draperyCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
+              <div class="carousel-indicators custom-carousel-indicators">
+                <button type="button" data-bs-target="#draperyCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#draperyCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#draperyCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+
+                </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="media/room/mobile_rooms_photo (1)/DRAPERY 1.png" class="img-fluid rounded-start w-100 d-block" alt="Drapery Room 1" />
+                </div>
+                <div class="carousel-item">
+                  <img src="media/room/mobile_rooms_photo (1)/DRAPERY 2.png" class="img-fluid rounded-start w-100 d-block" alt="Drapery Room 2" />
+                </div>
+                <div class="carousel-item">
+                  <img src="media/room/mobile_rooms_photo (1)/DRAPERY 3.png" class="img-fluid rounded-start w-100 d-block" alt="Drapery Room 3" />
+                </div>
+                </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 p-4 d-flex flex-column justify-content-between position-relative">
+            <div>
+              <h3 class="text-warning fw-bold">DRAPERY PLACE</h3>
+              <hr class="my-2 w-100">
+              <p class="black"><img src="media/icon/location.svg" alt="location icon" class="icon me-2" width="20" height="20">65 Leman St, London E1 8EU</p>
+              
+              <hr class="my-2 w-100">
+
+              <div class="d-flex flex-wrap mb-3">
+                <span class="me-4 d-flex align-items-center black"><img src="media/icon/washing.svg" alt="washing icon" class="icon me-2" width="20" height="20">Laundry</span>
+                <span class="me-4 d-flex align-items-center black"><img src="media/icon/wifi.svg" alt="wifi icon" class="icon me-2" width="20" height="20">Wifi</span>
+                <span class="d-flex align-items-center black"><img src="media/icon/dumbel.svg" alt="dumbel icon" class="icon me-2" width="20" height="20">Gym</span>
+              </div>
+              <hr class="my-2 w-100">
+
+              <p class="d-flex align-items-center black"><img src="media/icon/location.svg" alt="location icon" class="icon me-2" width="20" height="20">Queen Mary University <span class="ms-4">16 min via tube</span></p>
+            </div> 
+            
+            <div class="position-absolute top-0 end-0 mt-3 pe-3 d-none d-md-block">
+              <button class="btn btn-lg fw-bold fs-5 px-4 py-2 shadow-sm rounded-pill custom-bg-rainbow">
+                <span class="text-white">£560 /week</span>
+              </button>
+            </div>
+            
+            <div class="mt-3 d-block d-md-none">
+              <button class="btn btn-lg fw-bold fs-5 px-4 py-2 shadow-sm w-100 rounded-pill custom-bg-rainbow">
+                <span class="text-white">£560/week</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>  
+  </section>
+
+  <footer class="footer-section mt-5">
+    <div class="container text-center py-4">
+      <div class="row g-4">
+        <div class="col-6 col-md-3">
+          <h2 class="footer-number">+5000</h2>
+          <p class="footer-label">Students</p>
+        </div>
+        <div class="col-6 col-md-3">
+          <h2 class="footer-number">+2000</h2>
+          <p class="footer-label">Rooms</p>
+        </div>
+        <div class="col-6 col-md-3">
+          <h2 class="footer-number">+51</h2>
+          <p class="footer-label">Residences</p>
+        </div>
+        <div class="col-6 col-md-3">
+          <h2 class="footer-number">3</h2>
+          <p class="footer-label">Global Offices</p>
+        </div>
+      </div>
+
+      <div class="row mt-4 align-items-center">
+        <div class="col-md-4">
+          <img src="media/logo/londonist.svg" alt="Londonist Logo" class="footer-logo">
+        </div>
+        <div class="col-md-4">
+          <p class="footer-social-title">Follow Us On Social Media</p>
+          <div class="footer-social-icons">
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-youtube"></i></a>
+            <a href="#"><i class="bi bi-x"></i></a>
+            <a href="#"><i class="bi bi-linkedin"></i></a>
+            <a href="#"><i class="bi bi-instagram"></i></a>
+          </div>
+          <p class="mt-2 text-muted small">&copy; 2025 Londonist DMC</p>
+        </div>
+        <div class="col-md-4">
+          <img src="media/logo/home-away.svg" alt="home away from home" class="footer-slogan">
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

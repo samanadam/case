@@ -1,0 +1,128 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.bg-purple {
+  background: linear-gradient(to bottom right, #65008b, #d000aa);
+  border: 2px solid gold;
+}
+
+.bg-pink {
+  background-color: #ff00b7 !important;
+  background-size: auto;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.text-pink {
+  color: #ff00b7 !important;
+}
+
+.form-control::placeholder {
+    
+    color: #65008b; 
+}
+.hero-section {
+  background-image: url("media/bc/bc_form.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+.residence-section {
+
+  background-image: url("media/bc/bc_room.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 5px solid gold;
+  min-height: 100vh;
+}
+.black{
+ color: #333;
+ 
+}
+.gold-border {
+    border: 2px solid gold;
+}
+.custom-gold{
+  color: gold;
+  
+}
+.custom-bg-rainbow{
+  background: linear-gradient(to  right,  #F5A700,#ff6ce7,#6500aa
+);
+}
+
+
+@media (min-width: 992px) {
+    .residence-section {
+        padding-top: 30px; 
+        padding-bottom: 30px;
+    }
+
+    
+    .residence-section .col-md-6 {
+        padding-top: 15px; 
+        padding-bottom: 15px;
+    }
+
+
+    .residence-section .row.mb-4 {
+        margin-bottom: 1.5rem; 
+        
+    }
+}
+
+@media (max-width: 767.98px) {
+    .residence-section {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        flex-direction: column;
+
+    }
+    
+}
+
+.footer-section {
+  background-color: #f1f1f1;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.footer-number {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #6c3bff;
+}
+
+.footer-label {
+  font-weight: 600;
+  color: #333;
+}
+
+.footer-logo {
+  max-width: 160px;
+  height: auto;
+}
+
+.footer-social-title {
+  color: #ff6600;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.footer-social-icons a {
+  color: #ff6600;
+  font-size: 1.3rem;
+  margin: 0 5px;
+  transition: color 0.2s;
+}
+
+.footer-social-icons a:hover {
+  color: #6c3bff;
+}
+
+.footer-slogan {
+  max-height: 60px;
+}
