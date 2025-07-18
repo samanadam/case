@@ -15,8 +15,24 @@ body {
 
 .text-pink {
   color: #ff00b7 !important;
-}
+  font: 600;
+   font-family: 'IBM Plex Mono', monospace;
+      font-weight: bold;
 
+}
+.text-gold {
+  color: gold !important;
+  font: 600;
+   font-family: 'IBM Plex Mono', monospace;
+   font-weight: bold;
+}
+.form-text-gold {
+  color: gold !important;
+  font: 600;
+   font-family: 'IBM Plex Mono', monospace;
+   font-weight: bold;
+   font-size: larger;
+}
 .form-control::placeholder {
     
     color: #65008b; 
@@ -40,19 +56,32 @@ body {
 }
 .black{
  color: #333;
- 
+ font-family: 'Unbounded';
 }
 .gold-border {
     border: 2px solid gold;
 }
-.custom-gold{
-  color: gold;
-  
-}
+
 .custom-bg-rainbow{
   background: linear-gradient(to  right,  #F5A700,#ff6ce7,#6500aa
 );
 }
+  .button-wrapper {
+    text-align: center; /* İçindeki inline/inline-block öğeleri ortalar */
+  }
+  
+  .image-button {
+    display: inline-block; /* margin: auto çalışması için */
+    border: none;
+    background: none;
+    padding: 0;
+    cursor: pointer;
+  }
+
+  .y-helper{
+    margin-top:  600px;
+
+  }
 
 
 @media (min-width: 992px) {
@@ -83,6 +112,7 @@ body {
     }
     
 }
+
 
 .footer-section {
   background-color: #f1f1f1;

@@ -16,12 +16,12 @@
     <div class="container py-5">
      
       <div class="row justify-content-center">
-        <div class="col-lg-8">          
-          <form class="p-4 bg-purple rounded-4 " id="myForm">
-            <p class="text-center custom-gold mt-3 small">
+        <div class="col-lg- flex-md-row ">          
+          <form class="p-4 bg-purple bg-opacity-55 y-helper " id="myForm">
+            <p class="text-center form-text-gold mt-3 ">
               Access Granted!
             </p>
-            <p class="text-center custom-gold mt-3 small">
+            <p class="text-center form-text-gold mt-3  ">
               Just one more step - complete the form!
             </p>
             <div class="row g-2">
@@ -49,13 +49,15 @@
                 <input type="text" class="form-control" placeholder="Academic Year*" id="Academic-id" />
               </div>
               <div class="col-12">
-                <textarea rows="2" class="form-control" placeholder="Message*" id="Message-id"></textarea>
+                <textarea rows="5" class="form-control" placeholder="Message*" id="Message-id"></textarea>
               </div>
             </div>
             <p class="text-center mt-3 small">
               For stays starting from 1st September 2025, book a minimum of 20 weeks with full payment. Prices may vary depending on the duration of your booking. T&Cs apply.
             </p>
-            <button type="submit" class="btn btn-warning w-100 fw-bold" id="Enter-btn">ENTER LONDONIST</button>
+            <div class="button-wrapper">
+            <button type="submit" class="image-button " id="Enter-btn"><img src="media/Btn/Enter-Btn.png" alt="Enter-"></button>
+            </div>
           </form>
 
           <div id="alertDiv" class="mt-3"></div>
@@ -69,7 +71,7 @@
     <div class="container py-5">
       <h2 class="text-center text-warning mb-4">LONDONIST RESIDENCES</h2>
           
-        <div class="row bg-white  g-0 flex-column flex-md-row mb-4 gold-border">
+        <div class="row bg-white p-2 g-0 flex-column flex-md-row mb-4 gold-border">
           <div class="col-md-3 position-relative">
             <span class="badge bg-pink w-100 d-block text-center py-2 rad">NEW RESIDENCE</span>
             
@@ -95,8 +97,12 @@
 
           <div class="col-md-6 p-4 d-flex flex-column justify-content-between position-relative">
             <div>
-              <h3 class="text-pink fw-bold">PADDINGTON CITI VIEW</h3>
               <hr class="my-2 w-100">
+
+              <h3 class="text-pink fw-bold">PADDINGTON CITI VIEW</h3>
+              <hr class="my-8 w-100">
+   
+              <div style="align-items: center;">
               <p class="black"><img src="media/icon/location.svg" alt="location icon" class="icon me-2" width="20" height="20">15 - 25 Talbot Square, London, W2 1TT</p>
 
                 <hr class="my-2 w-100">
@@ -108,19 +114,20 @@
 
               </div>
               <hr class="my-2 w-100">
-              <p class="d-flex align-items-center black"><img src="media/icon/location.svg" alt="location icon" class="icon me-2" width="20" height="20">Oxford Street - 20 min via tube <span class="ms-4">16 min via tube</span></p>
-            </div> 
+              <p class="d-flex align-items-center black"><img src="media/icon/location.svg" alt="location icon" class="icon me-2" width="20" height="20">Oxford Street <span class="ms-4"> 20 min via tube </span></p>
+              </div> 
+            </div>
             
               
             <div class="position-absolute top-0 end-0 mt-3 pe-3 d-none d-md-block">
               <button class="btn btn-lg fw-bold fs-5 px-4 py-2 shadow-sm rounded-pill custom-bg-rainbow">
-                <span class="text-white">£560 /week</span>
+                <span class="text-white">£525 /week</span>
               </button>
             </div>
             
             <div class="mt-3 d-block d-md-none">
               <button class="btn btn-lg fw-bold fs-5 px-4 py-2 shadow-sm w-100 rounded-pill custom-bg-rainbow">
-                <span class="text-white">£560/week</span>
+                <span class="text-white">£525/week</span>
               </button>
             </div>
         </div>
@@ -150,13 +157,17 @@
 
           <div class="col-md-6 p-4 d-flex flex-column justify-content-between position-relative">
             <div>
-              <h3 class="text-warning fw-bold">DRAPERY PLACE</h3>
-              <hr class="my-2 w-100">
+              <h3 class="text-gold fw-bold">DRAPERY PLACE</h3>
+              <hr class="my-8 w-100">
+              
+          
+              <div style="align-items: center;">
               <p class="black"><img src="media/icon/location.svg" alt="location icon" class="icon me-2" width="20" height="20">65 Leman St, London E1 8EU</p>
               
               <hr class="my-2 w-100">
 
               <div class="d-flex flex-wrap mb-3">
+                d
                 <span class="me-4 d-flex align-items-center black"><img src="media/icon/washing.svg" alt="washing icon" class="icon me-2" width="20" height="20">Laundry</span>
                 <span class="me-4 d-flex align-items-center black"><img src="media/icon/wifi.svg" alt="wifi icon" class="icon me-2" width="20" height="20">Wifi</span>
                 <span class="d-flex align-items-center black"><img src="media/icon/dumbel.svg" alt="dumbel icon" class="icon me-2" width="20" height="20">Gym</span>
@@ -164,6 +175,7 @@
               <hr class="my-2 w-100">
 
               <p class="d-flex align-items-center black"><img src="media/icon/location.svg" alt="location icon" class="icon me-2" width="20" height="20">Queen Mary University <span class="ms-4">16 min via tube</span></p>
+            </div>
             </div> 
             
             <div class="position-absolute top-0 end-0 mt-3 pe-3 d-none d-md-block">
